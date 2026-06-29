@@ -510,49 +510,64 @@ a { color: inherit; text-decoration: none; }
 .footer-links {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
 }
 
 .footer-links a {
+    font-size: 0.8rem;
     color: var(--ink-faint);
     transition: color 0.2s;
 }
 
 .footer-links a:hover { color: var(--paper); }
 
+.footer-sep {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+}
+
 /* ------------------------------------------------------------------ */
 /* Legal pages (Terms, Privacy)                                        */
 /* ------------------------------------------------------------------ */
 
 .legal-section {
-    min-height: calc(100vh - 60px - 100px);
-    max-width: 760px;
-    margin: 0 auto;
     padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .legal-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    max-width: 720px;
+    width: 100%;
 }
 
 .legal-title {
     font-family: var(--font-display);
-    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
     color: var(--ink);
+    margin-bottom: 2rem;
 }
 
-.legal-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    font-size: 1rem;
-    line-height: 1.8;
+.legal-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-content p {
+    font-size: 0.925rem;
     color: var(--ink-muted);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+}
+
+.legal-muted {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    margin-top: 2rem !important;
 }
 
 /* ------------------------------------------------------------------ */
